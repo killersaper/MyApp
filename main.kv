@@ -1,0 +1,17 @@
+#:kivy 2.0
+<Box>:
+    textid: textid
+    buttonid:buttonid
+    orientation: 'vertical'    
+    TextInput:
+        id:textid
+        text: ''
+        multiline: False
+        on_text_validate: root.enter_text()
+        size_hint: (1, .2)
+    Button:
+        id: buttonid
+        text: 'Кнопка 1'
+        on_press: root.click(self)
+        size_hint: (1, .2)
+    Widget:
